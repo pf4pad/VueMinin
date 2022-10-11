@@ -13,9 +13,9 @@
     <div class="card">
       <h1>{{ title }}</h1>
       <div class="form-control">
-        <input type="text" :placeholder="placeholderString" :value="inputValue" @input="inputChangeHandler"
-          @keypress.enter="addNewNote">
-        <!-- <input type="text" v-bind:placeholder="placeholderString" v-bind:value="inputValue" v-on:input="inputChangeHandler" 
+        <input type="text" :placeholder="placeholderString" v-model="inputValue" @keypress.enter="addNewNote">
+        <!-- <input type="text" v-bind:placeholder="placeholderString" v
+          -bind:value="inputValue" v-on:input="inputChangeHandler" 
             v-on:keypress.enter="addNewNote">-->
       </div>
 
